@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="col-md-6 col-md-offset-3">
+        <!--<div class="well well-lg">-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Sign In
+            </div>
+            <div class="panel-body">
+                <form enctype="multipart/form-data"  id="signunform" method="post" name="signunform" ng-submit="signupformsubmit(frm)" angular-validator>
+                    <div class="alert alert-danger" ng-show="commonerror" ng-bind="errormsg"></div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <input type="text" class="form form-control" id="firstname" name="firstname" ng-model="frm.firstname" placeholder="Enter First Name" required required-message="'Firstname is required'">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form form-control" id="lastname" name="lastname" ng-model="frm.lastname" placeholder="Enter Last Name" required required-message="'Lastname is required'">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form form-control" id="username" name="username" ng-model="frm.username" placeholder="Enter Username" required required-message="'Username is required'">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form form-control" id="useremail" name="useremail" ng-model="frm.useremail" placeholder="Enter Email" required required-message="'Email is required'">
+                    </div>
+                    <div class="form-group">
+                        <input type="Password" class="form form-control" id="password" name="password" ng-model="frm.password" placeholder="Enter Password" required required-message="'Password is required'">
+                    </div>
+                    <div class="form-group">
+                        <input type="Password" class="form form-control" id="confirm_password" name="confirm_password" ng-model="frm.confirm_password" placeholder="Confirm Password" required required-message="'Confirm password is required'">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary form-control" value="Sing In">
+                    </div>
+
+                    <div class="form-group or-container"><center><strong>OR</strong></center></div>
+
+                    <div class="form-group">
+                        
+                        <a href="#/fbsignin"><img src="images/fb_login_icon.gif"></a>
+                    </div>
+                </form>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+</div>

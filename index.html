@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="app">
+    <head>
+        <title>Demo Site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS06NOoQ0fLmt25enF8gQIOGAhnvjQL30"></script>
+        <script src="//cdn.ckeditor.com/4.5.6/standard/ckeditor.js" type="text/javascript"></script>
+        <style>
+            .footer {
+                //position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                padding: 1rem;
+                background-color: #efefef;
+                text-align: center;
+              }
+              .footer-copyright {
+                    clear: left;
+                    float: left;
+                    padding-top: 2px;
+                    width: 30%;
+                }
+                
+                .body{
+                    min-height: 635px;
+                }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Demo Site</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        <li><a href="#/">Home</a></li>
+                        <li><a href="#/about">About Us</a></li>
+                        <li><a href="#/contact">Contact</a></li>
+                        <li><a href="#/blog">Blogs</a></li>
+                        <li><a href="#/signin">Sign In</a></li>
+                        <li><a href="#/signup">Sign Up</a></li>
+                    </ul>
+                    
+                </div><!-- /.navbar-collapse -->
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <div class="body">
+            <ng-view ></ng-view>
+        </div>
+        
+        <div class="footer" >
+            Demo Site
+            <strong>@2016</strong>.
+        </div>
+    </body>
+
+    <!--loading angular js files -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/public_html/lib/angularjs/angular-route.min.js"></script>
+    
+    <!--loading app.js file-->
+    <script src="app.js"></script>
+    
+
+    <!--loading all controller-->
+    <script src="modules/frontend/home/home.controller.js"></script>
+    <script src="modules/frontend/about/about.controller.js"></script>
+    <script src="modules/frontend/contact/contact.controller.js"></script>
+    <script src="modules/backend/blog/blog.controller.js"></script>
+    <script src="modules/frontend/signin/signin.controller.js"></script>
+    <script src="modules/frontend/signup/signup.controller.js"></script>
+    <script src="modules/frontend/user_dashboard/profile.controller.js"></script>
+    <script src="services/sessionService.js"></script>
+    <script src="js/custom_map.js"></script>
+</html>

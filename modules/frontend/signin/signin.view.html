@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="col-md-6 col-md-offset-3">
+        <!--<div class="well well-lg">-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Sign In
+            </div>
+            <div class="panel-body">
+                <form enctype="multipart/form-data"  id="signinform" method="post" name="signinform" ng-submit="signinformsubmit(frm)" angular-validator>
+                    <div class="alert alert-danger" ng-show="commonerror" ng-bind="errormsg"></div>
+                    <div class="form-group">
+                        <input type="email" class="form form-control" id="useremail" name="useremail" ng-model="frm.useremail" Placeholder="Enter email" required required-message="'Email is required'">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="Password" class="form form-control" id="password" name="password" ng-model="frm.password" placeholder="Enter Password" required required-message="'Password is required'">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-primary form-control" value="Sing In">
+                    </div>
+                </form>
+                
+                <div class="form-group"><center><strong>OR</strong></center></div>
+                
+                <div class="form-group">
+                    <!--<a href="javascript:void(0);" ng-click="fbsignin()"><img src="images/fb_login_icon.gif"></a>-->
+                    <a target="_blank" href="https://www.facebook.com/dialog/oauth?client_id=609087439283968&redirect_uri=http://localhost/blogsApplication/public_html/&state=948c4a9f122152473b47d0c606dd316d&scope=email" ><img src="images/fb_login_icon.gif"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

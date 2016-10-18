@@ -1,0 +1,46 @@
+<div class="container">
+	<center><h1>How to Reach Us?</h1>
+        <h4>With our head office based in India, we have a global presence. You can reach us at</h4></center>
+        <br>
+        
+        <div class="col-md-12 well">
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading"><h4>Corporate Office</h4></div>
+                    <div class="panel-body">
+                        <h5>CODAEMON SOFTWARES PRIVATE LIMITED, 425 Amanora Chambers, Magarpatta Cir, Amanora Park Town, Hadapsar, Pune, Maharashtra 411028<br>
+                            <br>
+                        Phone: 7709519370<br>
+                        Email: support@codaemonsoftwares.com<br></h5>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading"><h4>Sales & Delivery Offices</h4></div>
+                    <div class="panel-body">
+                        <h5>CODAEMON SOFTWARES PRIVATE LIMITED Room no: 8,9,16, 5th Floor, Monibhandar, Webel Bhavan, Block EP & GP, Sector V, Bidhannagar, Salt Lake, Kolkata - 700091<br>
+                        <br>
+                        Phone: 9830277430<br>
+                        Email: support@codaemonsoftwares.com<br></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading"><h4>Contact us</h4></div>
+                    <div class="panel-body">
+                        <form id="contactusform" method="post" name="contactusform" ng-submit="contactusformsubmit(frm)" angular-validator>
+                            <div class="alert alert-danger" ng-show="commonerror" ng-bind="errormsg"></div>
+                            <div class="alert alert-success" ng-show="commonsuccess" ng-bind="successmsg"></div>
+                            <input type="text" class="form-control form-group" placeholder="Name" id="username" name="username" ng-model="frm.username" required required-message="'Name is required'"/>
+                            <input type="email" class="form-control form-group" placeholder="Email address" id="useremail" name="useremail" ng-model="frm.useremail" required required-message="'Email is required'" />
+                            <input type="text" class="form-control form-group" placeholder="Phone number" id="phonenumber" name="phonenumber" ng-model="frm.phonenumber" required required-message="'Phone number is required'"/> 
+                            <textarea class="form-control form-group" placeholder="Comment" id="comment" name="comment" ng-model="frm.comment" required required-message="'Name is required'"></textarea>
+                            <input type="submit" class="btn btn-primary" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+	<div class="well col-md-12"><div id="map_canvas" style="width:100%; height: 500px;"></div></div>
+</div>
