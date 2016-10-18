@@ -1,6 +1,5 @@
 var locations = [
-    ['CODAEMON SOFTWARES PRIVATE LIMITED', 'Pune', 'https://goo.gl/maps/qKA1YuccX5q'],
-    ['CODAEMON SOFTWARES PRIVATE LIMITED', 'Kolkata', 'https://goo.gl/maps/xRwYhKVZV5F2'],
+    ['Technowebies LLC', 'Pune', 'https://goo.gl/maps/h6dAprDo6cJ2'],
 ];
 
 var geocoder;
